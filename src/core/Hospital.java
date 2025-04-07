@@ -114,6 +114,9 @@ public class Hospital {
                     a++;
                 }
                 System.out.println("Patient " + patient.getId() + " has " + a + " appoiments");
+                for (Doctor doctor : patient.getDoctors()){
+                    System.out.println("Patient " + patient.getId() + " has an appoiment with the doctor " + doctor.getId());
+                }
             }
         }
     }
